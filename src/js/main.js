@@ -1,8 +1,7 @@
 // |=============== CONNECTING EXTERNAL MODULES ===============>
-// import module_name from 'module-name';
+// eslint-disable-next-line no-unused-vars
+import focusVisible from 'focus-visible';
 
-// |=============== SCRIPT CONNECTION |  ===============>
-// |=============== SCRIPT CONNECTION |  ===============>
 // |=============== SCRIPT CONNECTION |  ===============>
 // |=============== SCRIPT CONNECTION |  ===============>
 // |=============== SCRIPT CONNECTION |  ===============>

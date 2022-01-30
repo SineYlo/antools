@@ -1,7 +1,7 @@
 {
-  "name": "project-name",
+  "name": "antools",
   "version": "1.0.0",
-  "description": "Some description of the project.",
+  "description": "An aggregator of programs that will help you find what you exactly need.",
   "main": "gulpfile.babel.js",
   "scripts": {
     "prepare": "husky install",
@@ -23,21 +23,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SineYlo/Starter-Template.git"
+    "url": "git+https://github.com/SineYlo/antools.git"
   },
   "keywords": [
-    "keyword-1",
-    "keyword-2",
-    "keyword-3",
-    "keyword-4",
-    "keyword-5"
+    "aggregator",
+    "program",
+    "designer",
+    "developer",
+    "search"
   ],
   "author": "SineYlo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SineYlo/Starter-Template/issues"
+    "url": "https://github.com/SineYlo/antools/issues"
   },
-  "homepage": "https://github.com/SineYlo/Starter-Template#readme",
+  "homepage": "https://github.com/SineYlo/antools#readme",
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/eslint-parser": "^7.16.5",
@@ -88,5 +88,11 @@
     "stylelint-scss": "^4.1.0",
     "vinyl-buffer": "^1.0.1",
     "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "focus-visible": "^5.2.0",
+    "loaders.css": "^0.1.2",
+    "superplaceholder": "^1.0.0",
+    "swiper": "^7.4.1"
   }
 }
