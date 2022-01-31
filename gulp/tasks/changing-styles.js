@@ -42,7 +42,7 @@ const changingStyles = () => {
       postcssPxToRem({
         rootValue: 16,
         unitPrecision: 5,
-        propList: ['*', '!border*', '!outline*'],
+        propList: ['*', '!border*', '!outline*', '!*-shadow'],
         selectorBlackList: ['html'],
         replace: true,
         mediaQuery: false,
