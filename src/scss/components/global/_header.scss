@@ -1,0 +1,106 @@
+.site-header {
+  &_indent {
+    margin-bottom: 58px;
+  }
+
+  &__container {
+    @include f-ai-center;
+  }
+
+  &__logo {
+    margin-right: 20.99673%;
+  }
+
+  &__nav {
+    margin-right: auto;
+  }
+
+  &__login {
+    margin-right: 41px;
+    font-weight: $second-font-weight;
+    line-height: 24px;
+    color: $seventeenth-color;
+    opacity: 0.78;
+    transition-property: color, opacity;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover,
+    &.focus-visible {
+      color: $fifteenth-color;
+    }
+
+    &:active {
+      color: $white-color;
+      opacity: 1;
+    }
+  }
+
+  &__sign-up {
+    padding: 12px 28px;
+    min-width: 118px;
+    color: $tenth-color;
+  }
+}
+
+.nav-header {
+  width: min(100%, 35.29412%);
+
+  &__list {
+    @include f-ai-center;
+  }
+
+  &__item:nth-child(1) {
+    margin-right: 9.72222%;
+  }
+
+  &__item:nth-child(2) {
+    margin-right: 13.65741%;
+  }
+
+  &__item:nth-child(3) {
+    margin-right: 9.25926%;
+  }
+
+  &__link {
+    display: inline-block;
+    font-weight: $primary-font-weight;
+    line-height: 24px;
+    color: $eighteenth-color;
+    transition-property: color, opacity;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    &_arrow {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: -22px;
+        top: 5px;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        background: url("../img/sprites.svg#icon-arrow-down-bg") 0 0 / 18px 18px no-repeat;
+      }
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover,
+    &.focus-visible {
+      color: darken($eighteenth-color, 20%);
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+  }
+}

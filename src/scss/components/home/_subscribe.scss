@@ -1,0 +1,78 @@
+.section-subscribe {
+  &_indent {
+    border-bottom: 1px solid $twentieth-color;
+    padding-bottom: 239px;
+  }
+
+  &__container {
+    @include f-ai-center;
+
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  &__desc {
+    margin-bottom: 98px;
+    max-width: 427px;
+    text-align: center;
+    transform: translate(-2px, -2px);
+  }
+
+  &__form {
+    position: relative;
+  }
+}
+
+.form-subscribe {
+  @include f-center-sb;
+
+  border-radius: $second-br;
+  padding: 8px 12px 8px 24px;
+  width: 549px;
+  height: 64px;
+  background-color: $fourth-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: -2px;
+    bottom: -2px;
+    z-index: $primary-z;
+    border-radius: inherit;
+    background: linear-gradient(90.89deg, $twenty-first-color -1.67%, $twenty-fourth-color 103.73%);
+  }
+
+  &__field {
+    width: 190px;
+    font-size: $text-size-small;
+    line-height: 21px;
+    color: $nineteenth-color;
+
+    &::placeholder {
+      color: inherit;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.focus-visible {
+      caret-color: $twelfth-color;
+    }
+  }
+
+  &__label {
+    @include visually-hidden;
+  }
+
+  &__join {
+    padding: 12px 36px;
+    min-width: 131px;
+  }
+}

@@ -1,1 +1,97 @@
 // |=============== HERE WE DESCRIBE THE STYLES FOR ELEMENTS FROM THE UI KIT ===============>
+.html {
+  font-size: $text-size-base;
+  scroll-behavior: smooth;
+}
+
+.body {
+  padding-top: 26px;
+  font-family: $primary-font-family;
+  background-color: $eleventh-color;
+}
+
+.container {
+  @include containerBase(1274px, 25px);
+}
+
+.button {
+  display: inline-block;
+  border-radius: $primary-br;
+  font-weight: $second-font-weight;
+  line-height: 24px;
+  color: $white-color;
+  background-color: $primary-color;
+  transition: background-color $fast-transition-duration ease-in-out;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover,
+  &.focus-visible {
+    background-color: darken($primary-color, 10%);
+  }
+
+  &:active {
+    background-color: darken($primary-color, 15%);
+  }
+}
+
+.button-card {
+  display: inline-block;
+  border-radius: $primary-br;
+  padding: 9px 35px;
+  min-width: 106px;
+  font-weight: $second-font-weight;
+  line-height: 24px;
+  color: $eighteenth-color;
+  transition-property: color, background-color;
+  transition-duration: $fast-transition-duration;
+  transition-timing-function: ease-in-out;
+}
+
+.title {
+  font-weight: $primary-font-weight;
+  font-size: $text-size-max-tiny;
+  line-height: 62px;
+  color: $fifteenth-color;
+}
+
+.title-card {
+  font-weight: $primary-font-weight;
+  font-size: $text-size-large;
+  line-height: 36px;
+  color: $seventeenth-color;
+  transition: color $fast-transition-duration ease-in-out;
+}
+
+.usage-card {
+  display: inline-block;
+  font-size: $text-size-medium;
+  line-height: 27px;
+  color: $ninth-color;
+  transition: color $fast-transition-duration ease-in-out;
+}
+
+.desc {
+  font-weight: $primary-font-weight;
+  font-size: $text-size-medium;
+  line-height: 30px;
+  color: $eighteenth-color;
+}
+
+.desc-card {
+  line-height: 30px;
+  color: $eighteenth-color;
+  transition: color $fast-transition-duration ease-in-out;
+}
+
+.like-card {
+  border-radius: $primary-br;
+  padding: 7px;
+}
+
+.add-card {
+  border-radius: $primary-br;
+  padding: 6px;
+}

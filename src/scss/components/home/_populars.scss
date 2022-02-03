@@ -1,0 +1,216 @@
+.section-populars {
+  &_indent {
+    margin-bottom: 224px;
+  }
+
+  &__title {
+    margin-bottom: 23px;
+    text-align: center;
+  }
+
+  &__desc {
+    margin: 0 auto 110px;
+    max-width: 402px;
+    text-align: center;
+    text-indent: -5px;
+  }
+
+  &__list {
+    margin-bottom: 100px;
+  }
+
+  &__more {
+    @include p-h-center;
+
+    margin-bottom: 198px;
+    border: 1px solid $twenty-first-color;
+    border-radius: $primary-br;
+    padding: 16px 37px;
+    min-width: 184px;
+    font-weight: $primary-font-weight;
+    font-size: $text-size-big;
+    line-height: 30px;
+    color: $primary-color;
+    transition: background-color $fast-transition-duration ease-in-out;
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover,
+    &.focus-visible {
+      background-color: $twenty-first-color;
+    }
+
+    &:active {
+      background-color: darken($twenty-first-color, 40%);
+    }
+  }
+
+  &__brands {
+    position: relative;
+  }
+}
+
+.list-populars {
+  @include grid;
+
+  column-gap: $primary-gap;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(294px, auto);
+  grid-template: repeat(2, minmax(294px, auto)) / repeat(3, minmax(auto, 392px));
+  row-gap: $second-gap;
+
+  &__item {
+    position: relative;
+    border-radius: $second-br;
+    padding: 33px;
+    transition-property: background-color, transform;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+    backdrop-filter: blur(50px);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -2px;
+      right: -2px;
+      top: -2px;
+      bottom: -2px;
+      z-index: $primary-z;
+      border-radius: inherit;
+      background: url("../img/sprites.svg#fv-mask-populars-bg") 12px -6px no-repeat, linear-gradient(118.49deg, $twenty-second-color -2.11%, $twenty-fourth-color 28.55%, $twenty-third-color 44.69%, $twenty-fourth-color 96.78%);
+      opacity: 0;
+      transition: opacity $fast-transition-duration ease-in-out;
+    }
+
+    &:hover {
+      background-color: $fifth-color;
+      transform: translateY(-20px);
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+
+  &__content {
+    margin-bottom: 30px;
+    padding-left: 94px;
+
+    &_figma {
+      background: url("../img/sprites.svg#icon-figma-bg") 0 0 / 64px 64px no-repeat;
+    }
+
+    &_sketch {
+      background: url("../img/sprites.svg#icon-sketch-bg") 0 5px / 64px 57px no-repeat;
+    }
+
+    &_vsc {
+      background: url("../img/sprites.svg#icon-vsc-bg") 0 2px / 65px 63px no-repeat;
+    }
+
+    &_notion {
+      background: url("../img/sprites.svg#icon-notion-bg") 0 1px / 64px 64px no-repeat;
+    }
+
+    &_slack {
+      background: url("../img/sprites.svg#icon-slack-bg") 0 1px / 65px 64px no-repeat;
+    }
+
+    &_invision {
+      background: url("../img/sprites.svg#icon-invision-bg") 0 1px / 65px 64px no-repeat;
+    }
+  }
+
+  &__title {
+    margin-bottom: 3px;
+
+    .list-populars__item:hover & {
+      color: $fifteenth-color;
+    }
+  }
+
+  &__usage {
+    .list-populars__item:hover & {
+      color: $eighth-color;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+
+    .list-populars__item:hover & {
+      color: $seventeenth-color;
+    }
+  }
+
+  &__box {
+    @include f-center-sb;
+  }
+
+  &__actions {
+    @include f-jc-sb;
+
+    width: min(100%, 96px);
+  }
+
+  &__like {
+    transition-property: background-color, box-shadow;
+    transition-duration: $fast-transition-duration;
+    transition-timing-function: ease-in-out;
+
+    .list-populars__item:hover & {
+      box-shadow: 0 5px 10px -3px $twenty-fifth-color;
+      background-color: $fourth-color;
+    }
+  }
+
+  &__heart {
+    fill: $nineteenth-color;
+    transition: fill $fast-transition-duration ease-in-out;
+
+    .list-populars__item:hover & {
+      fill: $thirteenth-color;
+    }
+  }
+
+  &__visit {
+    .list-populars__item:hover & {
+      color: $white-color;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.brands-populars {
+  border-radius: $third-br;
+  padding: 55px 86px 56px 79px;
+  background-color: $twenty-seventh-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: -2px;
+    bottom: -2px;
+    z-index: $primary-z;
+    border-radius: inherit;
+    background: url("../img/sprites.svg#fv-mask-brands-bg") 0 -2px no-repeat, linear-gradient(92.39deg, $twenty-third-color -4.6%, $twenty-fourth-color 96.79%);
+  }
+
+  &__title {
+    margin-bottom: 55px;
+    font-weight: $primary-font-weight;
+    font-size: $text-size-large;
+    line-height: 36px;
+    text-align: center;
+    color: $sixteenth-color;
+    transform: translate(4px, 2px);
+  }
+
+  &__list {
+    @include f-center-sb;
+  }
+}

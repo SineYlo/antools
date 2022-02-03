@@ -8,18 +8,18 @@
     <!--#========== PAGE TITLE IN BROWSER ==========#-->
     <title>Antools</title>
     <!--#========== PRE-LOADING FONTS ==========#-->
-    <link rel="preload" href="fonts/poppins/poppins-regular.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/poppins/poppins-medium.woff2" as="font" crossorigin>
-    <link rel="preload" href="fonts/poppins/poppins-semibold.woff2" as="font" crossorigin>
+    <link href="fonts/poppins/poppins-regular.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/poppins/poppins-medium.woff2" rel="preload" as="font" crossorigin>
+    <link href="fonts/poppins/poppins-semibold.woff2" rel="preload" as="font" crossorigin>
     <!--#========== CONNECTING READY-MADE JAVASCRIPT SOLUTIONS ==========#-->
-    <link rel="stylesheet" href="css/modules-home.min.css?ver=1" media="screen">
+    <link href="css/modules-home.min.css?ver=1" rel="stylesheet" media="screen">
     <!--#========== INCLUDING STYLE FILES ==========#-->
-    <link rel="stylesheet" href="css/styles.min.css?ver=1" media="screen">
+    <link href="css/styles.min.css?ver=1" rel="stylesheet" media="screen">
     <!--#========== PROVIDES INFORMATION ABOUT THE AUTHOR ==========#-->
-    <link rel="me" href="https://sineylo-dev.ru">
-    <link rel="me" href="mailto:contact@sineylo-dev.ru">
+    <link href="https://sineylo-dev.ru" rel="me">
+    <link href="mailto:contact@sineylo-dev.ru" rel="me">
     <!--#========== CONNECT THE MANIFEST WITH THE REST OF THE ICONS AND SETTINGS ==========#-->
-    <link rel="manifest" href="main.webmanifest">
+    <link href="main.webmanifest" rel="manifest">
     <meta name="application-name" content="Antools">
     <!--#========== DISABLING LINK FORMATION ON IOS DEVICES ==========#-->
     <meta name="format-detection" content="telephone=no">
@@ -45,7 +45,8 @@
     <!--#========== ADDS THE SITE TO THE HOME SCREEN AS AN ANDROID APP ==========#-->
     <meta name="mobile-web-app-capable" content="yes">
     <!--#========== CONNECT SCRIPTS ==========#-->
-    <script defer src="js/main.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="js/main.min.js" defer></script>
   </head>
   <body class="body">
     <!--#========== CONNECT THE SITE HEADER ==========#-->

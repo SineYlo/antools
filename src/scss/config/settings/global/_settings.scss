@@ -2,3 +2,7 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+
+.html.sr .load-hidden {
+  visibility: hidden;
+}

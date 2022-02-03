@@ -1,0 +1,161 @@
+.section-hero {
+  padding-top: 49px;
+
+  &_indent {
+    margin-bottom: 203px;
+  }
+
+  &__container {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -49px;
+      display: inline-block;
+      width: 589px;
+      height: 568px;
+      background: url("../img/sprites.svg#fv-code-bg") 0 0 / 589px 568px no-repeat;
+    }
+  }
+
+  &__title {
+    margin-bottom: 28px;
+    max-width: 600px;
+    font-weight: $primary-font-weight;
+    font-size: $text-size-max-small;
+    line-height: 1.4;
+    color: $fifteenth-color;
+  }
+
+  &__dot {
+    color: $primary-color;
+  }
+
+  &__desc {
+    margin-bottom: 59px;
+    max-width: 434px;
+    font-size: $text-size-medium;
+    line-height: 30px;
+    color: $eighteenth-color;
+  }
+
+  &__form {
+    position: relative;
+    margin-bottom: 110px;
+  }
+}
+
+.form-hero {
+  @include f-center-sb;
+
+  border-radius: $second-br;
+  padding: 8px 12px 8px 55px;
+  min-height: 64px;
+  max-width: 498px;
+  background-color: $fourth-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: -2px;
+    bottom: -2px;
+    z-index: $primary-z;
+    border-radius: inherit;
+    background: linear-gradient(90.89deg, $twenty-first-color -1.67%, $twenty-fourth-color 103.73%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url("../img/sprites.svg#icon-search-bg") 0 0 / 24px 24px no-repeat;
+  }
+
+  &__label {
+    @include visually-hidden;
+  }
+
+  &__field {
+    width: 190px;
+    font-size: $text-size-small;
+    line-height: 21px;
+    color: $nineteenth-color;
+
+    &::placeholder {
+      color: inherit;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &.focus-visible {
+      caret-color: $twelfth-color;
+    }
+  }
+
+  &__search {
+    padding: 12px 36px;
+    min-width: 130px;
+  }
+}
+
+.socials-hero {
+  @include f-center-sb;
+
+  max-width: 190px;
+
+  &__item {
+    position: relative;
+    border-radius: $primary-br;
+    padding: 11px;
+    width: 58px;
+    height: 58px;
+    background-color: lighten($eleventh-color, 5%);
+  }
+
+  &__link {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    transition: opacity $fast-transition-duration ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    &_fb {
+      background: url("../img/sprites.svg#icon-fb-bg") 0 0 / 36px 36px no-repeat;
+    }
+
+    &_inst {
+      background: url("../img/sprites.svg#icon-inst-bg") 0 0 / 36px 36px no-repeat;
+    }
+
+    &_tw {
+      background: url("../img/sprites.svg#icon-tw-bg") 0 0 / 36px 36px no-repeat;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+
+    &:hover,
+    &:focus-visible {
+      opacity: 0.6;
+    }
+  }
+}

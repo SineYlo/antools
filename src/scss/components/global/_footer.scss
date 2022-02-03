@@ -1,0 +1,73 @@
+.site-footer {
+  padding: 70px 0 98px;
+
+  &__container {
+    @include flex;
+  }
+
+  &__content {
+    margin-right: 12.5%;
+  }
+
+  &__box:not(:last-child) {
+    margin-right: 9.59542%;
+  }
+}
+
+.content-footer {
+  @include flex;
+
+  flex-direction: column;
+
+  &__logo {
+    margin-bottom: 25px;
+  }
+
+  &__copy {
+    display: inline-block;
+    margin-bottom: 21px;
+    font-weight: $primary-font-weight;
+    line-height: 24px;
+    color: $fifteenth-color;
+  }
+
+  &__text {
+    max-width: 260px;
+    font-size: $text-size-small;
+    line-height: 25px;
+    color: $eighteenth-color;
+  }
+}
+
+.box-footer {
+  &__title {
+    margin-bottom: 20px;
+    font-weight: $primary-font-weight;
+    font-size: $text-size-big;
+    line-height: 30px;
+    color: $fifteenth-color;
+  }
+}
+
+.list-box {
+  &__text {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-weight: $primary-font-weight;
+    line-height: 24px;
+    color: $eighteenth-color;
+
+    &_link {
+      transition: opacity $fast-transition-duration ease-in-out;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover,
+      &.focus-visible {
+        opacity: 0.5;
+      }
+    }
+  }
+}
